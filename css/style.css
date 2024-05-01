@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --bg-color:rgb(216, 149, 218);
+    --secundary-color:rgb(214, 88, 159);
+    --primary-color:rgb(135, 2, 68);
+    --third-color:rgb(196, 228, 255);
+    --text-color:#fff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+
+header{
+    display: flex;
+    background-color:var(--primary-color);
+    padding: 30px;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+nav{
+    display: flex;
+    
+    background-color:var(--secundary-color);
+    
+
+}
+.cabecalho{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+}
+
+nav a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.galery{
+    display: flex;
+    
+    z-index: 1;
+    margin-top: 5px;
+}
+nav a:hover{
+    background-color: azure;
+    color: rgb(135, 2, 68);
+}
+
+#row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fakeimage{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+aside{
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    color: rgb(135, 2, 68);
+    
+}
+aside img{
+    background-color: pink;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+main{
+    flex: 70%;
+    background-color: var(--third-color);
+    padding: 20px;
+}
+
+article{
+    box-shadow: 0px 0px 10px #aaa;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    margin: 10px;
+    background-color: var(--text-color);
+}
+article img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #444;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width:400px) {
+    nav{
+        flex-direction: column;
+    }
+}
