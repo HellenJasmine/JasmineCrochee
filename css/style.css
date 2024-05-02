@@ -13,111 +13,47 @@
     --text-color:#fff;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 1000px;
-}
 
-header{
-    display: flex;
-    background-color:var(--primary-color);
-    padding: 30px;
-    text-align: center;
-    color: var(--text-color);
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-nav{
-    display: flex;
-    
-    background-color:var(--secundary-color);
-    
-
-}
-.cabecalho{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    
-}
-
-nav a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    
-}
 .galery{
     display: flex;
-    
     z-index: 1;
     margin-top: 5px;
-}
-nav a:hover{
-    background-color: azure;
-    color: rgb(135, 2, 68);
-}
-
-#row{
-    display: flex;
     flex-wrap: wrap;
 }
-
-.fakeimage{
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-aside{
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 400px;
-    border-radius: 5px;
-    color: rgb(135, 2, 68);
-    
-}
-aside img{
-    background-color: pink;
-    width: 100%;
-    padding: 0px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-main{
-    flex: 70%;
-    background-color: var(--third-color);
-    padding: 20px;
-}
-
-article{
+.item-galery{
     box-shadow: 0px 0px 10px #aaa;
     padding: 5px;
     border-radius: 5px;
     color: var(--primary-color);
     margin: 10px;
     background-color: var(--text-color);
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    width: 160px;
 }
-article img{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.item-galery:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px var(--secundary-color);
+}
+.item-galery img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: flex;
+    text-align: center;
     border-radius: 5px;
+    
+    
 }
 
-footer{
-    background-color: #444;
-    padding: 40px;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
+main {
+    flex: 70%;
+    background-color: var(--third-color);
+    padding: 20px;
+
 }
 
 @media screen and (max-width:400px) {
